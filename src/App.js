@@ -4,7 +4,7 @@ import { useTelegram } from './Components/hooks/useTelegram';
 
 
 function App() {
-const {onToggleButton} = useTelegram()
+const {onToggleButton, tg} = useTelegram()
 
 useEffect(()=> {
   tg.ready()
@@ -12,7 +12,7 @@ useEffect(()=> {
 
   return (
     <div className="App">
-<button onClick={onToggleButton}>toggle</button>
+<button onClick={onToggleButton }>toggle</button>
     </div>
   );
 }
